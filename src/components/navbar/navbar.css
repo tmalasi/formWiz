@@ -1,0 +1,16 @@
+.layout_nav {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .layout_nav a {
+    margin: 0 15px;
+    color: white;
+  }
+  .layout_nav a:hover {
+    color: #646cff;
+  }
