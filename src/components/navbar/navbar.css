@@ -14,3 +14,8 @@
   .layout_nav a:hover {
     color: #646cff;
   }
+  .layout_nav .active {
+    font-weight: bold; /* Make active link bold */
+    text-decoration: underline; /* Underline active link */
+    color: #646cff; /* Change color of active link */
+  }

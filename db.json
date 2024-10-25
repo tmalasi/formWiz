@@ -1,0 +1,36 @@
+{
+  "cvs": [
+    {
+      "id": "d74f",
+      "name": "Tea",
+      "surname": "Malasi",
+      "email": "teamalasi@gmail.com",
+      "phone": "0693956545",
+      "nationality": "Abania2",
+      "dob": "2024-10-02",
+      "linkedin": "https://www.linkedin.com/in/tea-malasi-1802a0257/",
+      "github": "https://github.com/tmalasiskksksks",
+      "workExperience": [
+        {
+          "position": "costumer consultant",
+          "company": "facilization",
+          "startDate": "2024-10-02",
+          "endDate": "",
+          "ongoing": true,
+          "description": "kkkk"
+        }
+      ],
+      "projects": [
+        {
+          "projectName": "testing",
+          "category": "stqa",
+          "startDate": "2024-10-03",
+          "endDate": "",
+          "ongoing": true,
+          "description": "kkkkkkkkk"
+        }
+      ],
+      "education": []
+    }
+  ]
+}
