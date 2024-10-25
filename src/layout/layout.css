@@ -224,7 +224,7 @@ form {
     margin-bottom: 20px;
   }
   
-  .searchBar {
+  .searchBar, select{
     width: 300px;
     margin-top: 20px;
     padding: 10px 15px;
@@ -246,7 +246,7 @@ form {
     transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
   
-  .searchBar:focus {
+  .searchBar:focus, select {
     border-color:  #535bf2; /* Custom color from your palette */
     box-shadow: 0 0 5px rgba(46, 46, 45, 0.566); /* Subtle shadow on focus */
   }

@@ -1,39 +1,7 @@
 {
   "cvs": [
     {
-      "id": "d74f",
-      "name": "Tea",
-      "surname": "Malasi",
-      "email": "teamalasi@gmail.com",
-      "phone": "0693956545",
-      "nationality": "Abania2",
-      "dob": "2024-10-02",
-      "linkedin": "https://www.linkedin.com/in/tea-malasi-1802a0257/",
-      "github": "https://github.com/tmalasiskksksks",
-      "workExperience": [
-        {
-          "position": "costumer consultant",
-          "company": "facilization",
-          "startDate": "2024-10-02",
-          "endDate": "",
-          "ongoing": true,
-          "description": "kkkk"
-        }
-      ],
-      "projects": [
-        {
-          "projectName": "testing",
-          "category": "stqa",
-          "startDate": "2024-10-03",
-          "endDate": "",
-          "ongoing": true,
-          "description": "kkkkkkkkk"
-        }
-      ],
-      "education": []
-    },
-    {
-      "id": "614a",
+      "id": "d395",
       "name": "Tea",
       "surname": "Malasi",
       "email": "teamalasi@gmail.com",
@@ -42,43 +10,68 @@
       "dob": "2024-10-01",
       "linkedin": "https://www.linkedin.com/in/tea-malasi-1802a0257/",
       "github": "https://github.com/tmalasiskksksks",
+      "dateCreate": "2024-10-25T07:45:16.889Z",
       "workExperience": [
         {
-          "position": "costumer consultant",
-          "company": "facilization",
-          "startDate": "2024-10-02",
-          "endDate": "",
-          "ongoing": true,
-          "description": "shshssh"
-        },
-        {
           "position": "Bootcamp",
-          "company": "facilization",
-          "startDate": "2024-10-24",
+          "company": "TeamSystemsss",
+          "startDate": "2024-10-01",
           "endDate": "",
           "ongoing": true,
-          "description": "hahaha"
+          "description": "sjssj"
         }
       ],
       "projects": [
         {
-          "projectName": "testing",
-          "category": "stqa",
+          "projectName": "eeeg",
+          "category": "ml and ai",
           "startDate": "2024-10-01",
           "endDate": "",
           "ongoing": true,
-          "description": "eidkdkd"
-        },
-        {
-          "projectName": "eeeg",
-          "category": "uddjjd",
-          "startDate": "2024-10-11",
-          "endDate": "",
-          "ongoing": true,
-          "description": "mdmdx"
+          "description": "sjjsjsj"
         }
       ],
       "education": []
+    },
+    {
+      "id": "7b7d",
+      "name": "mmm",
+      "surname": "Malasi",
+      "email": "teamalasi@gmail.com",
+      "phone": "0693956545",
+      "nationality": "Abania",
+      "dob": "2024-10-10",
+      "linkedin": "https://www.linkedin.com/in/tea-malasi-1802a0257/",
+      "github": "https://github.com/tmalasiskksksks",
+      "dateCreate": "2024-10-25T08:20:23.237Z",
+      "workExperience": [
+        {
+          "position": "Bootcamp",
+          "company": "TeamSystemsss",
+          "startDate": "2024-10-02",
+          "endDate": "",
+          "ongoing": true,
+          "description": "nsnsn"
+        }
+      ],
+      "projects": [
+        {
+          "projectName": "eeeg",
+          "category": "ml and ai",
+          "startDate": "2024-10-02",
+          "endDate": "",
+          "ongoing": true,
+          "description": "ksksk"
+        }
+      ],
+      "education": [
+        {
+          "title": "hehe",
+          "school": "jeje",
+          "year": "2022=202",
+          "country": "Albania"
+        }
+      ]
     }
   ]
 }

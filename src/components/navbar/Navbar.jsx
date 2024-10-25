@@ -3,10 +3,10 @@ import "./navbar.css"
 const Navbar = () => {
   return (
     <nav className="layout_nav">
-      <NavLink to="/" activeClassName="active">
+      <NavLink to="/" className="active">
         Home
       </NavLink>
-      <NavLink to="/card" activeClassName="active">
+      <NavLink to="/card" className="active">
         All CVs
       </NavLink>
     </nav>

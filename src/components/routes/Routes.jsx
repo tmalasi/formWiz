@@ -21,6 +21,7 @@ const Routes = () => {
     dob: "",
     linkedin: "",
     github: "",
+    dateCreate:"",
     workExperience: [],
     projects: [],
     education: [],
