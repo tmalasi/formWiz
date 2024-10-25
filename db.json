@@ -31,6 +31,54 @@
         }
       ],
       "education": []
+    },
+    {
+      "id": "614a",
+      "name": "Tea",
+      "surname": "Malasi",
+      "email": "teamalasi@gmail.com",
+      "phone": "0693956545",
+      "nationality": "Abania",
+      "dob": "2024-10-01",
+      "linkedin": "https://www.linkedin.com/in/tea-malasi-1802a0257/",
+      "github": "https://github.com/tmalasiskksksks",
+      "workExperience": [
+        {
+          "position": "costumer consultant",
+          "company": "facilization",
+          "startDate": "2024-10-02",
+          "endDate": "",
+          "ongoing": true,
+          "description": "shshssh"
+        },
+        {
+          "position": "Bootcamp",
+          "company": "facilization",
+          "startDate": "2024-10-24",
+          "endDate": "",
+          "ongoing": true,
+          "description": "hahaha"
+        }
+      ],
+      "projects": [
+        {
+          "projectName": "testing",
+          "category": "stqa",
+          "startDate": "2024-10-01",
+          "endDate": "",
+          "ongoing": true,
+          "description": "eidkdkd"
+        },
+        {
+          "projectName": "eeeg",
+          "category": "uddjjd",
+          "startDate": "2024-10-11",
+          "endDate": "",
+          "ongoing": true,
+          "description": "mdmdx"
+        }
+      ],
+      "education": []
     }
   ]
 }
