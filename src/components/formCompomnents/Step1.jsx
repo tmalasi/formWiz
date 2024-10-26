@@ -17,7 +17,6 @@ const Step1 = ({ formData, setFormData }) => {
     const cvs = {
       ...formData,
       dateCreate: formData.id ? formData.dateCreate : new Date().toISOString(),
-
     };
 
     try {

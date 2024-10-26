@@ -11,7 +11,7 @@ const Display = lazy(() => import("../display components/Display"));
 const AllCVsDisplay = lazy(() => import("../display components/AllCVsDisplays"));
 
 const Routes = () => {
-  //so that in the steps we are able to access and modify teh same data
+  //so that in the steps we are able to access and modify the same data
   const [formData, setFormData] = useState({
     name: "",
     surname: "",

@@ -152,7 +152,7 @@ const Step3 = ({ formData, setFormData }) => {
         Previous
       </button>
 
-      <button type="button" onClick={(e) => handleSubmit(e, false)}>  {existingProjectIndex !== -1 ? "Update Project" : "Add Project"}</button>
+      <button type="button" onClick={(e) => handleSubmit(e)}>  {existingProjectIndex !== -1 ? "Update Project" : "Add Project"}</button>
 
       <button type="button" onClick={handleNext}>
         Next

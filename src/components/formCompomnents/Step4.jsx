@@ -123,7 +123,7 @@ const Step4 = ({ formData, setFormData }) => {
         Previous
       </button>
 
-      <button type="button" onClick={(e) => handleSubmit(e, false)}>
+      <button type="button" onClick={(e) => handleSubmit(e)}>
         {existingEducationIndex !== -1 ? "Update Education" : "Add Education"}
       </button>
 

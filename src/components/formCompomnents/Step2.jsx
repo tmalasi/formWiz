@@ -148,7 +148,7 @@ const Step2 = ({ formData, setFormData }) => {
         Previous
       </button>
 
-      <button type="button" onClick={(e) => handleSubmit(e, false)}>
+      <button type="button" onClick={(e) => handleSubmit(e)}>
         {existingWorkIndex !== -1 ? "Update Work Experience" : "Add Work Experience"}
       </button>
 
