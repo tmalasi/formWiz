@@ -12,29 +12,29 @@ const AllCVsDisplay = lazy(() => import("../display components/AllCVsDisplays"))
 
 const Routes = () => {
   //so that in the steps we are able to access and modify the same data
-  const [formData, setFormData] = useState({
-    name: "",
-    surname: "",
-    email: "",
-    phone: "",
-    nationality: "",
-    dob: "",
-    linkedin: "",
-    github: "",
-    dateCreate:"",
-    workExperience: [],
-    projects: [],
-    education: [],
-  });
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   surname: "",
+  //   email: "",
+  //   phone: "",
+  //   nationality: "",
+  //   dob: "",
+  //   linkedin: "",
+  //   github: "",
+  //   dateCreate:"",
+  //   workExperience: [],
+  //   projects: [],
+  //   education: [],
+  // });
 
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <AppRoutes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/step1" element={<Step1 formData={formData} setFormData={setFormData} />} />
-        <Route path="/step2" element={<Step2 formData={formData} setFormData={setFormData} />} />
-        <Route path="/step3" element={<Step3 formData={formData} setFormData={setFormData} />} />
-        <Route path="/step4" element={<Step4 formData={formData} setFormData={setFormData} />} />
+        <Route path="/step1" element={<Step1 />} />
+        <Route path="/step2" element={<Step2 />} />
+        <Route path="/step3" element={<Step3 />} />
+        <Route path="/step4" element={<Step4  />} />
         <Route path="/card">
           <Route path="" element={<AllCVsDisplay />} />
           <Route path=":display" element={<Display />} />

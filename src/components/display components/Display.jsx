@@ -5,7 +5,7 @@ const Display = () => {
   const { id } = useParams(); // Get the dynamic id from the URL
   const location = useLocation();
   const { cv } = location.state || {}; // Get the CV data from location state
-  // const navigate = useNavigate(); 
+  const navigate = useNavigate(); 
 
   if (!cv) {
     return <p>No CV data available for ID: {id}.</p>; // Handle case where no CV data is found
@@ -18,8 +18,8 @@ const Display = () => {
     <div className="cv-display-container">
       <h1>Display CV</h1>
       
-      <div className="cv-section">
-        <h2>Personal Information</h2>
+      <div className="cv-section" onClick={() => navigate("/step1", { state: { userId: cv.id } })}>
+      <h2>Personal Information</h2>
         <p><strong>Name:</strong> {cv.name}</p>
         <p><strong>Surname:</strong> {cv.surname}</p>
         <p><strong>Email:</strong> {cv.email}</p>
@@ -30,7 +30,7 @@ const Display = () => {
         <p><strong>GitHub:</strong> {cv.github}</p>
       </div>
 
-      <div className="cv-section">
+      <div className="cv-section" onClick={() => navigate("/step2", { state: { userId: cv.id } })}>
         <h2>Work Experience</h2>
         {cv.workExperience.length > 0 ? (
           <ul className="cv-list">
@@ -49,7 +49,7 @@ const Display = () => {
         )}
       </div>
 
-      <div className="cv-section">
+      <div className="cv-section" onClick={() => navigate("/step3", { state: { userId: cv.id } })}>
         <h2>Projects</h2>
         {cv.projects.length > 0 ? (
           <ul className="cv-list">
@@ -68,7 +68,7 @@ const Display = () => {
         )}
       </div>
 
-      <div className="cv-section">
+      <div className="cv-section" onClick={() => navigate("/step4", { state: { userId: cv.id } })}>
         <h2>Education</h2>
         {cv.education.length > 0 ? (
           <ul className="cv-list">

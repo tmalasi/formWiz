@@ -90,27 +90,19 @@
     },
     {
       "id": "5093",
-      "name": "Tea2",
-      "surname": "Malasi",
-      "email": "teamalasi@gmail.com",
-      "phone": "0693956545",
-      "nationality": "Abania",
-      "dob": "2024-10-02",
-      "linkedin": "https://www.linkedin.com/in/tea-malasi-1802a0257/",
-      "github": "https://github.com/tmalasiskksksks",
-      "dateCreate": "2024-10-25T11:04:42.203Z",
+      "name": "",
+      "surname": "",
+      "email": "",
+      "phone": "",
+      "nationality": "",
+      "dob": "",
+      "linkedin": "",
+      "github": "",
+      "dateCreate": "",
       "workExperience": [
         {
-          "position": "Bootcamp2",
-          "company": "TeamSystemsss",
-          "startDate": "2024-10-09",
-          "endDate": "",
-          "ongoing": true,
-          "description": "ahah"
-        },
-        {
-          "position": "costumer consultantrr",
-          "company": "TeamSystem",
+          "position": "",
+          "company": "facilization",
           "startDate": "",
           "endDate": "",
           "ongoing": false,
@@ -121,7 +113,7 @@
         {
           "projectName": "eeeg",
           "category": "ml and ai",
-          "startDate": "",
+          "startDate": "2024-10-15",
           "endDate": "",
           "ongoing": false,
           "description": ""
@@ -130,6 +122,46 @@
       "education": [
         {
           "title": "hehe",
+          "school": "",
+          "year": "",
+          "country": ""
+        }
+      ]
+    },
+    {
+      "id": "da0e",
+      "name": "Tea2",
+      "surname": "Malasi",
+      "email": "teamalasi@gmail.com",
+      "phone": "0693956545",
+      "nationality": "Abania tirana",
+      "dob": "2024-10-16",
+      "linkedin": "https://www.linkedin.com/in/tea-malasi-1802a0257/",
+      "github": "https://github.com/tmalasiskksksks",
+      "dateCreate": "",
+      "workExperience": [
+        {
+          "position": "costumer consultant",
+          "company": "TeamSystem",
+          "startDate": "2024-10-03",
+          "endDate": "",
+          "ongoing": true,
+          "description": ""
+        }
+      ],
+      "projects": [
+        {
+          "projectName": "eeeg",
+          "category": "ml and ai",
+          "startDate": "2024-10-16",
+          "endDate": "",
+          "ongoing": true,
+          "description": "kskksksk"
+        }
+      ],
+      "education": [
+        {
+          "title": "kkxksks",
           "school": "jeje",
           "year": "2022=202",
           "country": "Albania"

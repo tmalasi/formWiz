@@ -1,8 +1,52 @@
-import React from "react";
-import { useNavigate } from "react-router";
+import React, { useState, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router";
 
-const Step1 = ({ formData, setFormData }) => {
+const Step1 = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const [userId, setUserId] = useState(location.state?.userId || null);
+
+  const [formData, setFormData] = useState({
+    name: "",
+    surname: "",
+    email: "",
+    phone: "",
+    nationality: "",
+    dob: "",
+    linkedin: "",
+    github: "",
+    dateCreate: "",
+    workExperience: [],
+    projects: [],
+    education: [],
+  });
+
+  useEffect(() => {
+    if (userId) {
+      fetch(`http://localhost:3000/users/${userId}`)
+        .then((response) => response.json())
+        .then((data) => {
+          if (data) {
+            setFormData({
+              name: data.name || "",
+              surname: data.surname || "",
+              email: data.email || "",
+              phone: data.phone || "",
+              nationality: data.nationality || "", // corrected typo
+              dob: data.dob || "",
+              linkedin: data.linkedin || "",
+              github: data.github || "",
+              dateCreate: data.dateCreate || "",
+              workExperience: data.workExperience || [],
+              projects: data.projects || [],
+              education: data.education || [],
+            });
+          }
+        })
+        .catch((error) => console.error("Error fetching user data:", error));
+    }
+  }, [userId]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -16,13 +60,13 @@ const Step1 = ({ formData, setFormData }) => {
     e.preventDefault();
     const cvs = {
       ...formData,
-      dateCreate: formData.id ? formData.dateCreate : new Date().toISOString(),
+      dateCreate: new Date().toISOString(),
     };
 
     try {
       let response;
-      if (formData.id) {
-        response = await fetch(`http://localhost:5000/cvs/${formData.id}`, {
+      if (userId) {
+        response = await fetch(`http://localhost:5000/cvs/${userId}`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
@@ -43,6 +87,7 @@ const Step1 = ({ formData, setFormData }) => {
         const data = await response.json();
         console.log("CV saved/updated:", data);
         setFormData((prevData) => ({ ...prevData, id: data.id }));
+        setUserId(data.id);
       } else {
         console.error("Failed to save/update CV:", response.statusText);
       }
@@ -127,8 +172,11 @@ const Step1 = ({ formData, setFormData }) => {
             onChange={handleChange}
           />
         </div>
-        <button type="submit">{formData.id ? "Update" : "Submit"}</button>
-        <button type="button" onClick={() => navigate("/step2")}>
+        <button type="submit">{userId ? "Update" : "Submit"}</button>
+        <button
+          type="button"
+          onClick={() => navigate("/step2", { state: { userId } })}
+        >
           Next
         </button>
       </form>
